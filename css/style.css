@@ -1,0 +1,233 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    --color-element: #00e0d0;
+}
+@font-face {
+    font-family: HammersmithOne; /* Имя шрифта */
+    src: url(../fonts/HammersmithOne.ttf); /* Путь к файлу со шрифтом */
+}
+body {
+    font-family: sans-serif;
+    max-width: 1600px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+
+ul,li {
+    list-style-type: none;
+}
+
+.siteSection {
+    padding: 65px 0;
+    /*background-color: #2f284e;*/
+    /*opacity: 0.55;*/
+    /*background-image:  url("../img/Page1.png");*/
+}
+.siteSection-header {
+    padding-top: 15px;
+    background-image: linear-gradient(rgba(46, 42, 78, 0.85), rgba(80, 63, 118, 0.85)), url("../img/Page1.png");
+}
+
+.wrapper {
+    /*background-image:  url("../img/Page1.png");*/
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 590px;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
+.mainHeader {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.mainHeader__logo {
+    width: 130px;
+}
+.mainNav {
+
+}
+.mainNav__items {
+    display: flex;
+    align-items: center;
+}
+.mainNav__item {
+    padding: 10px;
+}
+
+.mainNav__item a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-size: 13px;
+    transition: color .3s;
+    font-family: 'Roboto', sans-serif;
+    font-weight:900;
+}
+.mainNav__item a:hover {
+    color: var(--color-element);
+}
+.mainNav__item-active a{
+    color: var(--color-element);
+}
+
+.slider{}
+.slider-header{}
+
+.slider__content{}
+.slider__items{
+    text-align: center;
+}
+.slider__item{
+    color: white;
+}
+
+.mainTitle{
+    font-family: 'Playfair Display', serif;
+    font-size: 32px;
+    font-weight:900;
+}
+.line{
+    /*display: block;*/
+    height: 1px;
+    border: 0;
+    border-top: 1px solid var(--color-element);
+    margin: 20px auto;
+    padding: 0;
+    width: 50px;
+}
+.innerContent{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight:300;
+    line-height: 1.5;
+}
+.mainBtn{
+    border: 1px solid var(--color-element);
+    background-image: none;
+    background-color: transparent;
+    color: var(--color-element);
+    margin-top: 40px;
+    padding: 10px 16px;
+    font-family: HammersmithOne, serif;
+    text-transform: uppercase;
+}
+
+.sliderDotted{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.sliderDotted__item{
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    border: 1px solid white;
+    margin: 10px;
+    transition: background-color .3s;
+}
+.sliderDotted__item:hover{
+    background-color: var(--color-element);
+    cursor: pointer;
+}
+.sliderDotted__item-active{
+    background-color: var(--color-element);
+}
+
+.siteSection-page2{
+    background: white;
+
+}
+.page2{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 960px;
+    min-width: 450px;
+    margin: 5px auto;
+    height: 260px;
+}
+.page2-logo{
+    display: block;
+    align-items: center;
+    margin: 0 auto;
+}
+.imgPage2{
+    width: 235px;
+}
+.page2-text{
+    margin-left: 100px;
+}
+
+.page2Title{
+    font-family: 'Playfair Display', serif;
+    font-size: 22px;
+    font-weight:700;
+}
+.page2-p{
+    font-family: 'Roboto', sans-serif;
+    font-size: 14px;
+    font-weight:300;
+    margin-top: 30px;
+}
+.btnPage2{}
+
+.siteSection-page3{
+    background-image: linear-gradient(rgba(46, 42, 78, 0.85), rgba(80, 63, 118, 0.85)), url("../img/Page2.png");
+}
+.page3{
+    display: flex;
+    align-items: center;
+    height: 420px;
+}
+.video{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+    margin: auto;
+    height: 150px;
+}
+.play{}
+.play_text{
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    font-weight:900;
+}
+
+@media screen and (max-width: 700px) {
+    .page2 {
+        flex-direction: column;
+        justify-content: center;
+    }
+    .page2-logo{
+
+
+    }
+    .imgPage2{
+        height: 50px;
+        width: auto;
+    }
+    .page2-text{
+        margin: 0 10px;
+    }
+    .page2Title{
+        text-align: center;
+    }
+    .page2-p{
+        margin-top: 5px;
+    }
+    .btnPage2{
+        display: flex;
+        justify-content: center;
+    }
+}
