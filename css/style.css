@@ -11,6 +11,7 @@
 body {
     font-family: sans-serif;
     max-width: 1600px;
+    min-width: 230px;
 }
 
 img {
@@ -52,8 +53,11 @@ ul,li {
     width: 130px;
 }
 .mainNav {
-
 }
+.mainNev__items__icon{
+    display: none;
+}
+
 .mainNav__items {
     display: flex;
     align-items: center;
@@ -150,7 +154,6 @@ ul,li {
     align-items: center;
     justify-content: space-between;
     max-width: 960px;
-    min-width: 450px;
     margin: 5px auto;
     height: 260px;
 }
@@ -211,7 +214,6 @@ ul,li {
     }
     .page2-logo{
 
-
     }
     .imgPage2{
         height: 50px;
@@ -229,5 +231,21 @@ ul,li {
     .btnPage2{
         display: flex;
         justify-content: center;
+    }
+
+    .mainNev__items__icon{
+        display: flex;
+        margin-right: 20px;
+        font-size: 60px;
+    }
+
+    .mainNav__items{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    .page2-logo{
+        display: none;
     }
 }
