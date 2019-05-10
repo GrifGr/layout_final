@@ -927,26 +927,6 @@ textarea {
         margin-left: 20px;
     }
 
-    /*.page9__body{*/
-        /*flex-direction: column;*/
-    /*}*/
-
-    /*.page9__header-part1 img {*/
-        /*width: 60px;*/
-    /*}*/
-
-    /*.page9__body-part3_newsletter input {*/
-        /*width: 100px;*/
-    /*}*/
-
-    /*.page9__body-part1_text p {*/
-        /*line-height: 1;*/
-    /*}*/
-
-    /*.page9__body-part2_rows1-col2 p {*/
-        /*line-height: 1;*/
-    /*}*/
-
     .page9__footer{
         flex-direction: column;
         align-items: center;
