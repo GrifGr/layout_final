@@ -50,7 +50,7 @@ ul, li {
     background-image: linear-gradient(rgba(46, 42, 78, 0.85), rgba(80, 63, 118, 0.85)), url("../img/Page1.png");
 }
 
-.wrapper {
+.page1 {
     /*background-image:  url("../img/Page1.png");*/
     display: flex;
     flex-direction: column;
@@ -60,7 +60,7 @@ ul, li {
     margin: 0 auto;
 }
 
-.mainHeader {
+.page1__mainHeader {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -411,6 +411,9 @@ ul, li {
 .page5__footer-text {
     margin-top: 70px;
     text-align: center;
+}
+
+.small-text{
     font-family: 'Roboto', sans-serif;
     font-size: 14px;
     font-weight: 300;
@@ -420,8 +423,57 @@ ul, li {
     margin-top: 30px;
 }
 
-.siteSection-page6 {
+.siteSection-page6 {}
+
+.page6{}
+
+.page6__header{
+    max-width: 960px;
+    margin: 0 auto;
 }
+.page6__header-side{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 70px;
+}
+
+.page6__header-side-left{}
+.page6__header-side-right{
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+}
+.page6__header-side-right_text{
+    margin: auto 0;
+}
+.page6__header-side-right_img{
+    margin: auto 10px;
+    height: 13px;
+    width: auto;
+}
+
+.page6__body{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /*padding: 0;*/
+    margin: 0 auto;
+    max-width: 1600px;
+}
+.page6__body_work_img{
+    height: 200px;
+    width: 266px;
+    margin: -3px -1px;
+}
+.page6__footer{
+    display: flex;
+}
+.page6__footer-btn{
+    margin: 0 auto;
+}
+
 
 .siteSection-page7 {
     background-image: linear-gradient(rgba(46, 42, 78, 0.85), rgba(80, 63, 118, 0.85)), url("../img/Page7.png");
@@ -435,7 +487,7 @@ ul, li {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     min-height: 360px;
     color: white;
@@ -616,17 +668,13 @@ textarea {
 
 .siteSection-page9 {
     background-image: linear-gradient(rgba(46, 42, 78, 0.85), rgba(80, 63, 118, 0.85)), url("../img/Page9.png");
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    margin: 0 auto;
 }
 
 .page9 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    width: 960px;
+    max-width: 960px;
     margin: 0 auto;
     min-height: 270px;
     color: white;
